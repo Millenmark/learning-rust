@@ -19,4 +19,15 @@ fn main() {
     // let a = 56;
 
     println!("The value of a in the outer scope is: {a}");
+
+    let tup: (i32, f64, String) = (500, 3.14, String::from("hello"));
+
+    let new_tup = (500, 6.4, 1);
+
+    let (x, y, z) = new_tup;
+
+    println!("The value of y is: {y}");
+    println!("The value of z is: {z}");
+
+    let a: [i32; 5] = [1, 2, 3, 4, 5];
 }
